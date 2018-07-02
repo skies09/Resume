@@ -15,13 +15,19 @@
 
 }
 
-.bg-color-skills{
+.bg-color-skills {
     background-color: #ffffff;
 }
 
-.bg-color-work-history{
+.bg-color-work-history {
     background-color: #9b59b6
 }
+
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -70,8 +76,8 @@ h4 {
 .row-table {
     display: table;
 }
-.history-heading
-.section-heading {
+
+.history-heading .section-heading {
     font-family: "EXO", "sans-serif";
     font-weight: 300;
     margin-top: 25px;
@@ -318,40 +324,62 @@ footer .cv-pdf i:hover {
     margin: 0;
 }
 
-.timeline-item:before{
+.timeline-item:before {
     content: attr(dates);
     position: absolute;
-    left:2.5em;
-    top:3em;
-    display:block;
+    left: 2.5em;
+    top: 3em;
+    display: block;
     font-family: "EXO", sans-serif;
     font-weight: 500;
     font-size: .8em;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
-.timeline-item:after{
+.timeline-item:after {
     width: 12px;
     height: 12px;
     display: block;
-    top:2.4em;
+    top: 2.4em;
     position: absolute;
-    left:-6px;
+    left: -6px;
     border-radius: 12px;
     content: '';
-    background:#fafafa;
+    background: #fafafa;
 }
 
-.history-heading{
-    color:#fafafa;
+.history-heading {
+    color: #fafafa;
     margin-bottom: 50px;
 }
 
-.history-items{
+.history-items {
     margin-bottom: 30px;
 }
 
+/*contact*/
+
+.contact-heading {
+    font-family: 'EXO', sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 10px;
+    margin:0 auto;
+    max-width: 70%;
+}
+
+button[type='sumbit']{
+    margin-top: 15px;
+    margin-bottom: :20px;
+    background-color: #e84610;
+    color:#fafafa;
+    
+}
 
 /*media queries*/
 
@@ -361,4 +389,11 @@ footer .cv-pdf i:hover {
         float: none;
         display: table;
     }
+    
+.center-form{
+    padding-top: 30px;
+    min-height: 240px;
+    margin:0 auto;
+    max-width: 50%;
+}
 }

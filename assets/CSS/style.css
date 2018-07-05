@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt:100,200,300,400,500,600,700|Indie+Flower:100,200,300,400,500,600,700');
 
 /*colors*/
 
@@ -58,7 +58,7 @@ h4 {
 }
 
 .general-sub {
-    font-family: "Exo, sans-serif";
+    font-family: "Indie Flower, sans-serif";
     font-weight: 300;
     color: #fafafa;
 }
@@ -69,8 +69,9 @@ h4 {
 
 .section-column {
     padding: 0 30px 30px;
-    float: left;
-    display: table;
+    float: none;
+    display: table-cell;
+    
 }
 
 .row-table {
@@ -78,7 +79,7 @@ h4 {
 }
 
 .history-heading .section-heading {
-    font-family: "EXO", "sans-serif";
+    font-family: "Indie Flower", "sans-serif";
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -109,7 +110,7 @@ header {
 }
 
 .name {
-    font-family: 'Exo', 'sans-serif';
+    font-family: 'Indie Flower', 'sans-serif';
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -118,7 +119,7 @@ header {
 }
 
 .title {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Indie Flower', 'sans-serif';
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
@@ -230,6 +231,7 @@ footer .cv-pdf i:hover {
 .media-center {
     margin: 20px;
     margin-bottom: 5px;
+
 }
 
 /*three reasons*/
@@ -248,7 +250,7 @@ footer .cv-pdf i:hover {
 
 .personal-info-item {
     margin-bottom: 20px;
-    display: block;
+    display: inline-block;
     clear: both;
 }
 
@@ -330,7 +332,7 @@ footer .cv-pdf i:hover {
     left: 2.5em;
     top: 3em;
     display: block;
-    font-family: "EXO", sans-serif;
+    font-family: "Indie Flower", sans-serif;
     font-weight: 500;
     font-size: .8em;
     padding: 0;
@@ -361,39 +363,54 @@ footer .cv-pdf i:hover {
 /*contact*/
 
 .contact-heading {
-    font-family: 'EXO', sans-serif;
+    font-family: 'Rock Salt', sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-.center-form{
+.contact-statement {
+    font-family: 'Rock Salt', sans-serif;
+    font-weight: 200;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    word-spacing: 25px;
+
+
+}
+
+.center-form {
     padding-top: 10px;
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 70%;
 }
 
-button[type='sumbit']{
+button[type='sumbit'] {
     margin-top: 15px;
     margin-bottom: :20px;
     background-color: #e84610;
-    color:#fafafa;
-    
+    color: #fafafa;
+
 }
+
+
 
 /*media queries*/
 
-@media(min-width:992px) {
+@media(min-width:767px) {
     .section-column {
         padding: 0 30px 30px;
         float: none;
         display: table;
+        margin:20px;
     }
-    
-.center-form{
-    padding-top: 30px;
-    min-height: 240px;
-    margin:0 auto;
-    max-width: 50%;
-}
+
+
+
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }

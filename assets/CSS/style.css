@@ -67,13 +67,6 @@ h4 {
     display: inline-block;
 }
 
-.section-column {
-    padding: 0 30px 30px;
-    float: none;
-    display: table-cell;
-    
-}
-
 .row-table {
     display: table;
 }
@@ -103,7 +96,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -130,7 +122,6 @@ header {
 
 #nav {
     margin: 0;
-
 }
 
 .menuitem {
@@ -151,7 +142,6 @@ header {
     display: block;
     color: #fafafa;
     font-size: 26px;
-
 }
 
 .menuitem span {
@@ -179,7 +169,6 @@ footer {
     color: #fafafa;
     min-height: 120px;
     margin: 0;
-
 }
 
 footer .cv-pdf i {
@@ -195,7 +184,6 @@ footer .cv-pdf i:hover {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-
 }
 
 .social-links {
@@ -225,13 +213,11 @@ footer .cv-pdf i:hover {
 
 #footer-details {
     margin: 20px;
-
 }
 
 .media-center {
     margin: 20px;
     margin-bottom: 5px;
-
 }
 
 /*three reasons*/
@@ -243,7 +229,6 @@ footer .cv-pdf i:hover {
 
 .three-reasons-heading {
     margin-bottom: 15px;
-
 }
 
 /*personal info*/
@@ -256,15 +241,15 @@ footer .cv-pdf i:hover {
 
 .personal-info-item .key,
 .personal-info-item .value {
+    display: inline-block;
+    height: 100%;
     padding-right: 8px;
-
 }
 
 
 .personal-info-item .key p,
 .personal-info-item .value p {
     padding-right: 0px;
-
 }
 
 
@@ -294,7 +279,6 @@ footer .cv-pdf i:hover {
 .progress {
     position: relative;
     height: 25px;
-
 }
 
 .progress-type {
@@ -304,7 +288,6 @@ footer .cv-pdf i:hover {
     padding: 3px 30px 2px 10px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
-
 }
 
 .progress-section {
@@ -375,8 +358,6 @@ footer .cv-pdf i:hover {
     margin-top: 25px;
     margin-bottom: 20px;
     word-spacing: 25px;
-
-
 }
 
 .center-form {
@@ -393,19 +374,14 @@ button[type='sumbit'] {
 
 }
 
-
-
 /*media queries*/
 
 @media(min-width:767px) {
     .section-column {
         padding: 0 30px 30px;
         float: none;
-        display: table;
-        margin:20px;
+        display: table-cell;
     }
-
-
 
     .center-form {
         padding-top: 30px;

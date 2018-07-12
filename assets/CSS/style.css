@@ -3,7 +3,7 @@
 /*colors*/
 
 .bg-color-name-title {
-    background-color: #676767;
+    background-color: #000066;
 }
 
 .bg-color-three-reasons {
@@ -41,7 +41,7 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #000000;
 }
 
 /*special padding*/
@@ -158,28 +158,28 @@ header {
 /*hover*/
 
 .hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
     height: 120px;
 }
 
 /*footer*/
 
 footer {
-    background-color: #525252;
+    background-color: #000066;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
 }
 
 footer .cv-pdf i {
-    color: #fafafa;
+    color: #0088cc;
     text-align: center;
     font-size: 18px;
     padding-left: 5px;
 }
 
 footer .cv-pdf i:hover {
-    color: #e84610;
+    color: #ff00ff;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -200,7 +200,7 @@ footer .cv-pdf i:hover {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
+    background: #0088cc;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -208,7 +208,7 @@ footer .cv-pdf i:hover {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: #ff00ff;
 }
 
 #footer-details {
@@ -224,7 +224,7 @@ footer .cv-pdf i:hover {
 
 .three-reasons-icon {
     font-size: 26px;
-    color: #e67e22;
+    color: #00cccc;
 }
 
 .three-reasons-heading {
@@ -347,14 +347,14 @@ footer .cv-pdf i:hover {
 
 .contact-heading {
     font-family: 'Rock Salt', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
 .contact-statement {
     font-family: 'Rock Salt', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
     word-spacing: 25px;

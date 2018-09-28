@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_tt1oAuAhoKJQisFm2yB3f");
+        })();
+    </script>
     <title>Donna Smith</title>
 </head>
 
 <body>
     <header class='container-fluid'>
-
         <div class='row'>
             <a href="index.html">
                 <div class='col-md-4 logo'></div>
@@ -30,17 +35,23 @@
 
                 <div class='row'>
                     <ul id='nav' class='list-inline clearfix'>
-                        <li class='col-xs-6 col-sm-3 ui-menu-color-home menuitem'>
+                        <li class='col-xs-6 col-sm-2 ui-menu-color-home menuitem'>
                             <a href='index.html' class='hvr-sweep-to-bottom'><i class='fa fa-home' aria-hidden-'true'></i><span>Home</span></a>
                         </li>
-                        <li class='col-xs-6 col-sm-3 ui-menu-color-resume menuitem'>
+                        <li class='col-xs-6 col-sm-2 ui-menu-color-resume menuitem'>
                             <a href='resume.html' class='hvr-sweep-to-bottom'><i class='fa fa-graduation-cap' aria-hidden-'true'></i><span>Resume</span></a>
                         </li>
-                        <li class='col-xs-6 col-sm-3 ui-menu-color-contact menuitem'>
+                        <li class='col-xs-6 col-sm-2 ui-menu-color-contact menuitem'>
                             <a href='contact.html' class='hvr-sweep-to-bottom'><i class='fa fa-commenting-o' aria-hidden-'true'></i><span>Contact</span></a>
                         </li>
-                        <li class='col-xs-6 col-sm-3 ui-menu-color-download menuitem'>
+                        <li class='col-xs-6 col-sm-2 ui-menu-color-download menuitem'>
                             <a href='assets/CV/DonnaCV.pdf' target='_blank' class='hvr-sweep-to-bottom'><i class='fa fa-download' aria-hidden-'true'></i><span>Download CV</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem ">
+                            <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem ">
+                            <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
                         </li>
                     </ul>
                 </div>
@@ -55,13 +66,13 @@
                 <h3 class='contact-heading uppercase text-center'>Got a project in mind?</h3>
                 <h5 class='contact-statement uppercase text-center'>Let's work together</h5>
             </div>
-            <div class='center-form'>
-                <form>
-                    <input type="text" name="name" class='form-control' id='fullname' placeholder='Name' required />
-                    <input type="text" name="email address" class='form-control' id='emailaddress' placeholder='Email' required />
-                    <textarea rows='5' name='projectsummary' class='form-control' id='projectsummary' placeholder='Project Description' required></textarea>
-                    <button type="submit" class='btn btn-info center-block'>Send Project Request</button>
-                </form>
+            <div class="center-form">
+                    <form onsubmit="sendMail(this);  return false;">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required>
+                        <input type="email" name="emailaddress" class="form-control" id="email" placeholder="Email" required>
+                        <textarea name="projectsummary" class="form-control" id="projectsummary" rows="7" placeholder="Project Description" required></textarea>
+                        <button type="submit" class="btn btn-info center-block">Send Project Request</button>
+                    </form>
             </div>
         </div>
     </section>
@@ -100,6 +111,8 @@
         </div>
 
     </footer>
+    <script src='/assets/js/sendEmail.js'></script>
+
 </body>
 
 </html>

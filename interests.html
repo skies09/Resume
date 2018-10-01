@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_tt1oAuAhoKJQisFm2yB3f");
-        })();
-    </script>
     <title>Donna Smith</title>
 </head>
 
@@ -60,19 +54,80 @@
         </div>
     </header>
 
-    <section class='container-fluid'>
-        <div class='row bg-color-contact'>
-            <div>
-                <h3 class='contact-heading uppercase text-center'>Got a project in mind?</h3>
-                <h5 class='contact-statement uppercase text-center'>Let's work together</h5>
+    <section class="container-fluid">
+        <div class="row row-table">
+            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-conferences section-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Conferences and Meetups attended</h3>
+                    </div>
+                </div>
+                <div id="map"></div>
             </div>
-            <div class="center-form">
-                <form onsubmit="sendMail(this);  return false;">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required>
-                    <input type="email" name="emailaddress" class="form-control" id="email" placeholder="Email" required>
-                    <textarea name="projectsummary" class="form-control" id="projectsummary" rows="7" placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-info center-block">Send Project Request</button>
-                </form>
+            <div class="col-xs-12 col-sm-12 col-md-8 bg-color-groups section-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase"> My groups and societies</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Women In STEM</h4>
+                                <h5>Girls Who Code</h5>
+                                <p>
+                                    Girls Who Code was founded with a single mission: to close the gender gap in technology!
+                                </p>
+                                <a href="https://girlswhocode.com/about-us/" target="_blank">Girls Who Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Open University</h4>
+                                <p>
+                                    Open University is a distance learning university that offer flexible learning to people in any situation. The offer many courses ranging from short courses to post graduate degrees.
+                                    <a href="http://www.openuniversity.edu" target="_blank">Open University</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  <!--  <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Biograd Laboratory</h4>
+                                <p>
+                                    <a href="https://www.meetup.com/javascript-full-stack-development/" target="_blank">Full Stack NY</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Programming Geeks</h4>
+                                <p>
+                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
             </div>
         </div>
     </section>
@@ -90,7 +145,6 @@
                     Front-end Web developer
                 </p>
             </div>
-
             <div class='col-sm-4'>
                 <h5 class='uppercase general-sub'>Download my CV</h5>
                 <p class='inline-block'>
@@ -109,10 +163,11 @@
                 </ul>
             </div>
         </div>
-
     </footer>
-    <script src='/assets/js/sendEmail.js'></script>
 
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUYeh2hvQnyi7neRwdf5BMoQaQJbqgXNk&callback=initMap"></script>
+    <script src='/assets/js/maps.js'></script>
 </body>
 
 </html>

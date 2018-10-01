@@ -351,6 +351,16 @@ footer .cv-pdf i:hover {
     margin-bottom: 30px;
 }
 
+/*map*/
+
+div#map {
+    min-height: 360px;
+    padding: 0;
+    margin:0;
+}
+
+
+
 /*contact*/
 
 .contact-heading {
@@ -398,3 +408,4 @@ button[type='sumbit'] {
         max-width: 50%;
     }
 }
+

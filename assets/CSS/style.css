@@ -28,6 +28,7 @@
 }
 
 
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -391,6 +392,13 @@ button[type='sumbit'] {
     color: #fafafa;
 
 }
+
+/*thanks*/
+.bg-color-thanks{
+    padding-top:90px;
+   padding-bottom:90px;
+}
+
 
 /*media queries*/
 

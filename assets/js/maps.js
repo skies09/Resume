@@ -2,15 +2,15 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
         center: {
-            lat: 46.619261,
-            lng: -33.134766
+            lat: 53.3900,
+            lng: 2.5970
         }
     });
 
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     var locations = [
-        { lat: 53.406564, lng: -2.555394 },
+        { lat: 53.406564, lng: -2.555394},
         { lat: 53.406973, lng: -2.967295},
         { lat: 52.024537, lng: -0.709274}
     ];

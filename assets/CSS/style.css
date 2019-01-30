@@ -30,11 +30,11 @@
 
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #cc2900;
 }
 
 .ui-menu-color-resume {
-    background-color: #9b59b6;
+    background-color: #990099;
 }
 
 .ui-menu-color-contact {
@@ -45,13 +45,14 @@
     background-color: #000000;
 }
 
+.ui-menu-color-interests {
+    background-color: #00b300;
+}
+
 .ui-menu-color-github {
     background-color: #1c4a6c;
 }
 
-.ui-menu-color-interests {
-    background-color: #e74c3c;
-}
 
 /*special padding*/
 

@@ -3,7 +3,7 @@
 /*colors*/
 
 .bg-color-name-title {
-    background-color: #000066;
+    background-image: linear-gradient(#064c88, #66a1d4 60%, #ccd9ff);
 }
 
 .bg-color-three-reasons {
@@ -175,7 +175,7 @@ header {
 /*footer*/
 
 footer {
-    background-color: #000066;
+    background-image: linear-gradient(#064c88, #66a1d4 60%, #ccd9ff);
     color: #fafafa;
     min-height: 120px;
     margin: 0;
@@ -204,7 +204,7 @@ footer .cv-pdf i:hover {
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px ;
+    padding: 12px;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
@@ -228,6 +228,10 @@ footer .cv-pdf i:hover {
 .media-center {
     margin: 20px;
     margin-bottom: 5px;
+}
+
+.full-height {
+    min-height: calc(100vh - 455px);
 }
 
 /*three reasons*/
@@ -358,7 +362,7 @@ footer .cv-pdf i:hover {
 div#map {
     min-height: 360px;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 
@@ -388,16 +392,17 @@ div#map {
 
 button[type='sumbit'] {
     margin-top: 15px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     background-color: #e84610;
     color: #fafafa;
 
 }
 
 /*thanks*/
-.bg-color-thanks{
-    padding-top:90px;
-   padding-bottom:90px;
+
+.bg-color-thanks {
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 
